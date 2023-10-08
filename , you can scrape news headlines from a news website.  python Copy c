@@ -1,0 +1,12 @@
+import requests
+from bs4 import BeautifulSoup
+
+URL = "https://example.com"  # Replace with the URL of the website you want to scrape
+
+def scrape_website(url):
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, "html.parser")
+    # Use soup to extract information from the website
+    # Example: headlines = soup.find_all("h2")
+
+scrape_website(URL)
